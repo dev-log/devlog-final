@@ -1,0 +1,81 @@
+img {
+  width: 100%;
+}
+
+.explore{
+  background: transparent;
+}
+
+.particles{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.devicon-html5-plain{
+  font-size: 2.5em;
+}
+
+.devicon-android-plain{
+  font-size: 2.5em;
+}
+
+.devicon-android-plain{
+}
+
+.devicon-linux-plain{
+  font-size: 2.5em;
+
+}
+.devicon-apple-original {
+  font-size: 2.5em;
+
+}
+.devicon-windows8-original{
+  font-size: 2.5em;
+
+}
+.devicon-html5-plain{
+  font-size: 2.5em;
+
+}
+.devicon-javascript-plain{
+  font-size: 2.5em;
+
+}
+.devicon-nodejs-plain{
+  font-size: 2.5em;
+
+}
+.devicon-react-original {
+  font-size: 2.5em;
+
+}
+.devicon-mysql-plain{
+  font-size: 2.5em;
+
+}
+.devicon-mongodb-plain{
+  font-size: 2.5em;
+
+}
+.devicon-python-plain{
+  font-size: 2.5em;
+
+}

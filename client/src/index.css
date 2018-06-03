@@ -1,0 +1,456 @@
+/*------------------------------------------------------------------------------------ */
+/* BASIC SETUP */
+/*------------------------------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+button {
+    background-color: #555;
+    color: #fff;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/*------------------------------------------------------------------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* HEADINGS */
+/*------------------------------------------------------------------------------------ */
+h1,
+h2 ,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e17055;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#welcome_login {
+    color: #fff;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* ICONS */
+/*------------------------------------------------------------------------------------ */
+
+
+
+/*------------------------------------------------------------------------------------ */
+/* PARAGRAPHS */
+/*------------------------------------------------------------------------------------ */
+.long-cpy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* GENERIC LINKS */
+/*------------------------------------------------------------------------------------ */
+
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+    /*	padding-bottom: 1px;*/
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+    border-bottom: 2px solid #e17055;
+}
+
+
+/*------------------------------------------------------------------------------------ */
+/* BUTTONS */
+/*------------------------------------------------------------------------------------ */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e17055;
+    border: 1px solid #e17055;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e17055;
+    color: #ff5252;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #fab1a0;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #fab1a0;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #fab1a0;
+    color: #fff;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* GENERIC LINKS */
+/*------------------------------------------------------------------------------------ */
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* LANDING PAGE */
+/*------------------------------------------------------------------------------------ */
+
+.img {
+    width: 100%;
+}
+
+.landing {
+    position: relative;
+    background: url('./components/layout/src/teamBeta.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: -30px;
+}
+
+.landing-inner {
+    padding-top: 80px;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-form {
+    opacity: 0.9;
+}
+
+
+/*------------------------------------------------------------------------------------ */
+/* SECTION FEATURES */
+/*------------------------------------------------------------------------------------ */
+.section-features .long-cpy {
+    margin-bottom: 40px;
+}
+
+.h2-features {
+    margin-top: 40px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.ion-ios-desktop,
+.ion-ios-card,
+.ion-ios-people,
+.ion-ios-calendar {
+    font-size: 300%;
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------------ */
+/* LOGIN PAGE */
+/*------------------------------------------------------------------------------------ */
+
+.login {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: -30px;
+    margin-bottom: -60px;
+}
+
+
+.latest-profiles-img {
+    width: 40px;
+    height: 40px;
+}
+
+.form-control::placeholder {
+    color: #bbb !important;
+}
+
+.btn {
+    background-color: #e17055;
+    border-radius: 40px;
+    border: 1px solid #e17055;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fab1a0;
+    color: #fff;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* FOOTER */
+/*------------------------------------------------------------------------------------ */
+
+footer {
+    background-color: #555;
+    padding: 50px;
+    font-size: 80%
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+.ion-logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-logo-instagram:hover {
+    color: #e95950;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* ANIMATIONS */
+/*------------------------------------------------------------------------------------ */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    /*	opacity: 0;*/
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animation {
+    opacity: 1;
+}
+
+/*------------------------------------------------------------------------------------ */
+/* SECTION PROJECT */
+/*------------------------------------------------------------------------------------ */
+
+.section-projects {
+    padding: 0;
+}
+
+.projects-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.projects-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.project-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.5);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;;
+}
+
+.project-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.h2-top {
+    margin-top: 40px;
+    margin-left: 220px;
+    margin-right: 180px;
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+
